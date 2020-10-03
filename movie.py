@@ -60,20 +60,8 @@ def processRequest(req):
     		language=list_of_data['Language']
     		country=list_of_data['Country']
     		ratings=rat[0]['Value']
-    		data={
-    		"Title" : title,
-    		"Release Date" : release,
-    		"Runtime" : runtime,
-    		"Genre" : genre,
-    		"Director" : director,
-    		"Writer" : writer,
-    		"Actors" : actors,
-    		"Plot" : plot,
-    		"Language" : language,
-    		"Country" : country,
-    		"Ratings" : ratings
-    		}
-    	return {
+    		data="Movie Name: " + title +"."+ "Released Date: " + release+"." + "Movie Runtime: " + runtime+"." + "Genre: " + genre+"." + "Director: " + director+"." + "Writer: " + writer+"." + "Actors: " + actors+"." + "Plot: " + plot+"." + "Language: " + language+"." + "Country: " + country+"." + "Ratings: "+ratings 
+ 	return {
             "fulfillmentText": data
             }
 
