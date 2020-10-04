@@ -34,7 +34,7 @@ def processRequest(req):
     		pressure=list_of_data['main']['pressure']
     		humidity=list_of_data['main']['humidity']
     		rep=report[0]['description']
-    		data="Today's Weather in " + city + ": "+'\n' + "Temperature: " + str(tempe) + " Celsius."+'\n'+ " Pressure: " + str(pressure) +"."+'\n' + " Humidity: " + str(humidity) +"." +'\n'+ " Weather Report: " + rep
+    		data="Today's Weather in " + city + ": "+'\n' + "Temperature: " + str(tempe) + " Celsius."+'\n'+ "Pressure: " + str(pressure) +"."+'\n' + "Humidity: " + str(humidity) +"." +'\n'+ "Weather Report: " + rep
     	return {
     		"fulfillmentText": data
     		}
